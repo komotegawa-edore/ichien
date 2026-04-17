@@ -1,0 +1,56 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = '呑み処 一縁',
+  subtitle = '旨い肴と、旨い酒。\n新大宮で深夜3時まで。'
+} = Astro.props;
+
+const heroImages = [
+  { src: '/images/food/chicken-nanban.jpg', alt: 'こだわりの料理' },
+  { src: '/images/drink/nara-sake.jpg', alt: '厳選のお酒' },
+  { src: '/images/atmosphere/counter.jpg', alt: '落ち着いた店内' },
+];
+---
+
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+  <!-- 3 images displayed side by side -->
+  <div class="absolute inset-0 flex flex-col md:flex-row">
+    {heroImages.map((img) => (
+      <div class="flex-1 h-full overflow-hidden">
+        <img
+          src={img.src}
+          alt={img.alt}
+          class="w-full h-full object-cover"
+        />
+      </div>
+    ))}
+  </div>
+
+  <!-- Background overlay -->
+  <div class="absolute inset-0 z-10" style="background-color: rgba(12, 12, 12, 0.55);"></div>
+  <div class="absolute inset-0 z-10" style="background: linear-gradient(to bottom, rgba(12,12,12,0.2), rgba(12,12,12,0.35) 50%, rgba(12,12,12,0.95));"></div>
+
+  <!-- Content -->
+  <div class="relative z-20 text-center px-6">
+    <p class="font-display text-sm tracking-[0.4em] text-accent mb-6 fade-in">
+      ICHIEN
+    </p>
+    <h1 class="font-serif text-4xl md:text-6xl tracking-[0.2em] mb-8 fade-in">
+      {title}
+    </h1>
+    <div class="divider mx-auto fade-in"></div>
+    <p class="text-sm md:text-base text-text-muted tracking-[0.15em] leading-loose mt-8 whitespace-pre-line fade-in">
+      {subtitle}
+    </p>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
+    <span class="font-display text-xs tracking-[0.3em] text-text-muted">SCROLL</span>
+    <div class="w-px h-12 bg-gradient-to-b from-text-muted to-transparent"></div>
+  </div>
+</section>

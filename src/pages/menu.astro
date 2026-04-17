@@ -1,0 +1,392 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MenuCard from '../components/MenuCard.astro';
+---
+
+<Layout title="メニュー | 呑み処 一縁 -ICHIEN-">
+  <!-- Page Header -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="section-title">Menu</p>
+      <h1 class="section-heading">メニュー</h1>
+      <div class="divider mx-auto"></div>
+    </div>
+  </section>
+
+  <!-- 刺身 -->
+  <section class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">刺身</h2>
+        <p class="text-sm text-text-muted">鮮度にこだわった刺身を毎日ご用意</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+        <MenuCard
+          name="鶏刺身盛り合わせ"
+          price="¥980"
+          description="もも・むね・ささみなど、部位ごとの味わいをお楽しみください"
+          tag="人気No.1"
+          image="/images/food/chicken-nanban.jpg"
+        />
+        <MenuCard
+          name="刺身盛り合わせ"
+          price="¥1,280"
+          description="旬の鮮魚を日替わりで盛り合わせ"
+          tag="おすすめ"
+          image="/images/food/smoke-salmon-marine.jpg"
+        />
+        <MenuCard
+          name="鶏たたき"
+          price="¥780"
+          description="香ばしく炙った鶏たたき。ポン酢でさっぱりと"
+        />
+        <MenuCard
+          name="本日の刺身（一品）"
+          price="¥680〜"
+          description="日替わりの鮮魚をお手頃に"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 焼き物 -->
+  <section class="py-16 px-6 bg-bg-light">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">焼き物</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+        <MenuCard
+          name="焼き鳥盛り合わせ（5本）"
+          price="¥780"
+          description="もも・ねぎま・つくね・皮・ぼんじり"
+          tag="定番"
+          image="/images/food/yakitori.jpg"
+        />
+        <MenuCard
+          name="手羽先の唐揚げ"
+          price="¥580"
+          description="カリッと揚げた手羽先。ビールのお供に"
+        />
+        <MenuCard
+          name="ホルモン焼き"
+          price="¥680"
+          description="味噌ダレで仕上げたホルモン焼き"
+        />
+        <MenuCard
+          name="豚バラ串"
+          price="¥580"
+          description="ジューシーな豚バラを串焼きで"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 揚げ物 -->
+  <section class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">揚げ物</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+        <MenuCard
+          name="鶏の唐揚げ"
+          price="¥680"
+          description="外はカリッと中はジューシー。自家製の味付け"
+          tag="大人気"
+          image="/images/food/tori-karaage.jpg"
+        />
+        <MenuCard
+          name="アジフライ"
+          price="¥650"
+          description="サクサクのアジフライ。タルタルソース添え"
+          image="/images/food/aji-fry.jpg"
+        />
+        <MenuCard
+          name="フライドポテト"
+          price="¥480"
+          description=""
+          image="/images/food/fried-potato.jpg"
+        />
+        <MenuCard
+          name="ごぼうの唐揚げ"
+          price="¥480"
+          description="カリカリのごぼうチップス"
+          image="/images/food/gobo-karaage.jpg"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 一品料理 -->
+  <section class="py-16 px-6 bg-bg-light">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">一品料理</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+        <MenuCard
+          name="だし巻き玉子"
+          price="¥680"
+          description="出汁をたっぷり使った手作りだし巻き。注文後ひとつずつ丁寧に焼き上げます"
+          tag="自慢の一品"
+          image="/images/food/dashimaki-tamago.jpg"
+        />
+        <MenuCard
+          name="ポテトサラダ"
+          price="¥480"
+          description="手作りポテトサラダ"
+          image="/images/food/potato-salad.jpg"
+        />
+        <MenuCard
+          name="枝豆"
+          price="¥380"
+          description=""
+        />
+        <MenuCard
+          name="冷やしトマト"
+          price="¥480"
+          description=""
+        />
+        <MenuCard
+          name="たこわさ"
+          price="¥450"
+          description=""
+          image="/images/food/takowasa.jpg"
+        />
+        <MenuCard
+          name="漬物盛り合わせ"
+          price="¥400"
+          description=""
+        />
+        <MenuCard
+          name="キムチ"
+          price="¥350"
+          description=""
+        />
+        <MenuCard
+          name="チーズ盛り合わせ"
+          price="¥580"
+          description="ワインにもよく合います"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- サラダ -->
+  <section class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">サラダ</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+        <MenuCard
+          name="シーザーサラダ"
+          price="¥680"
+          description="パルメザンチーズたっぷり"
+        />
+        <MenuCard
+          name="大根サラダ"
+          price="¥480"
+          description="シャキシャキ大根に自家製ドレッシング"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 締め -->
+  <section class="py-16 px-6 bg-bg-light">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">締め</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+        <MenuCard
+          name="ラーメン"
+          price="¥650"
+          description="あっさり鶏ガラスープの〆ラーメン。飲んだ後の一杯に"
+          tag="〆の定番"
+          image="/images/food/teppan-napolitan.jpg"
+        />
+        <MenuCard
+          name="焼きおにぎり"
+          price="¥380"
+          description="香ばしい醤油味の焼きおにぎり"
+        />
+        <MenuCard
+          name="お茶漬け"
+          price="¥480"
+          description="鮭 / 梅 / 明太子"
+        />
+        <MenuCard
+          name="焼きそば"
+          price="¥680"
+          description=""
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- コース -->
+  <section class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">コース・飲み放題</h2>
+        <p class="text-sm text-text-muted">ご宴会・歓送迎会・二次会にご利用ください</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="space-y-6 fade-in">
+        <MenuCard
+          name="飲み放題 2時間"
+          price="¥1,500"
+          description="生ビール・日本酒・焼酎・ワイン・カクテル・サワー・ソフトドリンク"
+          tag="お得"
+        />
+        <MenuCard
+          name="お手軽コース（料理5品+飲み放題2時間）"
+          price="¥3,000"
+          description="二次会や軽く飲みたい方におすすめ"
+          tag="2名様〜"
+        />
+        <MenuCard
+          name="一縁コース（料理7品+飲み放題2時間）"
+          price="¥4,000"
+          description="刺身・焼き物・揚げ物など、一縁の人気メニューを堪能できるスタンダードコース"
+          tag="一番人気 / 2名様〜"
+        />
+        <MenuCard
+          name="贅沢コース（料理9品+飲み放題2.5時間）"
+          price="¥5,000"
+          description="鶏刺身盛りや刺身盛りなど贅沢な内容。歓送迎会やお祝いに"
+          tag="2名様〜"
+        />
+      </div>
+
+      <p class="text-xs text-text-muted mt-6 fade-in">
+        ※ コース内容は季節や仕入れにより変更になる場合がございます<br />
+        ※ 貸切のご相談も承っております（最大22名様）<br />
+        ※ お祝い・サプライズ等、お気軽にご相談ください
+      </p>
+    </div>
+  </section>
+
+  <!-- Drink -->
+  <section class="py-16 px-6 bg-bg-light">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12 fade-in">
+        <h2 class="font-serif text-xl tracking-[0.15em] mb-2">ドリンク</h2>
+        <div class="divider"></div>
+      </div>
+
+      <!-- ドリンクメニュー -->
+      <div class="fade-in">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 text-sm text-text-muted">
+          <div class="border-b border-border/50 pb-3">
+            <span class="text-text">ビール</span>
+            <p class="mt-1">生ビール / 瓶ビール</p>
+          </div>
+          <div class="border-b border-border/50 pb-3">
+            <span class="text-text">日本酒</span>
+            <p class="mt-1">奈良の地酒を中心に常時数種類ご用意</p>
+          </div>
+          <div class="border-b border-border/50 pb-3">
+            <span class="text-text">焼酎</span>
+            <p class="mt-1">芋・麦・米など各種</p>
+          </div>
+          <div class="border-b border-border/50 pb-3">
+            <span class="text-text">ワイン</span>
+            <p class="mt-1">赤・白グラスワイン / ボトルワイン</p>
+          </div>
+          <div class="border-b border-border/50 pb-3">
+            <span class="text-text">カクテル</span>
+            <p class="mt-1">各種カクテルをご用意</p>
+          </div>
+          <div class="border-b border-border/50 pb-3">
+            <span class="text-text">サワー・ハイボール</span>
+            <p class="mt-1">レモンサワー / 各種フルーツサワー / ハイボール</p>
+          </div>
+          <div class="border-b border-border/50 pb-3">
+            <span class="text-text">ソフトドリンク</span>
+            <p class="mt-1">ウーロン茶 / ジンジャーエール / コーラ / オレンジジュース etc.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 単品ドリンク -->
+      <div class="fade-in mt-12">
+        <h3 class="font-serif text-base tracking-[0.1em] mb-6">単品ドリンク</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>生ビール</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥550</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>瓶ビール</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥550</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>ハイボール</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥480</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>レモンサワー</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥480</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>日本酒（グラス）</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥550〜</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>焼酎（グラス）</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥480〜</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>グラスワイン（赤・白）</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥500</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>カクテル各種</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥500〜</span>
+          </div>
+          <div class="flex justify-between text-sm border-b border-border/50 pb-2">
+            <span>ソフトドリンク</span>
+            <span class="text-accent font-display shrink-0 ml-4">¥350</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <p class="text-sm text-text-muted mb-6">ご予約・お問い合わせはお電話にて</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0742-35-5535" class="btn-primary justify-center">
+          電話で予約する
+        </a>
+        <a
+          href="https://www.instagram.com/nomidokoro_ichien/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-outline justify-center"
+        >
+          Instagramを見る
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
